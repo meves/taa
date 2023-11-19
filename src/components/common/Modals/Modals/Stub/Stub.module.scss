@@ -1,0 +1,51 @@
+// stub
+.modalStub {
+    .popup__text {
+        margin: 0 0 20px;
+        font-family: var(--open-sans);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+        color: var(--black);
+    
+        &:first-of-type {
+            margin-bottom: 50px;
+        }
+    
+        &:last-of-type {
+            margin-bottom: 40px;
+        }    
+    }
+    
+    .popup__buttons {
+        display: flex;
+        justify-content: space-around;
+    
+        .popup__button {
+            padding: 14px 61px;
+            font-family: var(--open-sans);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.35;
+            color: var(--white);
+            border-radius: 72px;
+            border: none;
+            cursor: pointer;
+            transition: all .4s ease-in-out;
+            
+            &_forvard {
+                background-color: var(--light-green);
+                text-decoration: none;
+            }
+    
+            &_back {
+                background-color:var((--brown-red));
+            }
+    
+            &:hover {
+                transform: scale(1.05);
+            }
+    
+        }
+    }
+} // end of stub

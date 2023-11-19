@@ -1,0 +1,31 @@
+.accordeon {
+    display: none;
+}
+
+.button {
+    max-width: 170px;
+    padding: 9px 36px;
+    font-family: var(--open-sans);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 72px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 675px) {
+    .accordeon {
+        display: flex;
+        flex-direction: column;
+    }  
+}
+
+@media (hover: hover) {
+    .button:hover { 
+        color: var(--blue-cookie);
+        border-color: var(--blue-cookie);
+     }
+  }

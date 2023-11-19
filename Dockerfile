@@ -1,0 +1,16 @@
+FROM node:19-alpine3.16 as build
+WORKDIR /app
+COPY web/frontend/package*.json ./
+RUN npm ci
+COPY web/frontend/ ./
+RUN touch .env
+ARG REACT_APP_BASE_URL
+RUN echo REACT_APP_BASE_URL=${REACT_APP_BASE_URL} > .env
+ARG REACT_APP_MINUTES_TO_DELETE_VIDEO
+RUN echo REACT_APP_MINUTES_TO_DELETE_VIDEO=${REACT_APP_MINUTES_TO_DELETE_VIDEO} >> .env
+ARG REACT_APP_METRIC
+RUN echo REACT_APP_METRIC=${REACT_APP_METRIC} >> .env
+ARG REACT_APP_MODE
+RUN echo REACT_APP_MODE=${REACT_APP_MODE} >> .env
+RUN npm run build
+CMD cp -r build result_build

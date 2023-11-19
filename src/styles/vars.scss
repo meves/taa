@@ -1,0 +1,47 @@
+:root {
+    /* colors */
+    --transparent: transparent;
+
+    --pure-white: #FFFFFF;
+    --pure-white-stroke: rgba(255, 255, 255, 0.4);
+    --white: #F1F2F3;
+    
+    --grey: #6B6B6B;
+    --black: #151515;
+    
+    --turquoise: #0BE9E9;
+    --turquoise-hover: #70FFFF;
+    --turquoise-active: #048B8B;
+    --accent-turquoise: #0BE9E9;
+
+    --accent-purple: #9B53D9;
+    --purple-hover: #8126CF;
+
+    --accent-red: #EA7474;
+
+    --denotative-success: #00A328;
+
+    --video-bg: #001F39;
+    --text-dark-blue: #011628;
+    --border-dark-blue: #011628;
+    --mobile-menu-bottom: rgba(11, 233, 233, 0.4);
+
+    --background-button: #002545;
+    --background-button-hover: #00325E;
+    --border-wrapper: linear-gradient(295.62deg, #21D6CC 6.31%, #9B53D9 89.7%);
+    --number-color: linear-gradient(306.8deg, #9B53D9 30.43%, #21D6CC 71.45%);
+    --app-background: #011628;
+
+    /* fonts */
+    --open-sans: 'Open Sans', sans-serif;
+    --roboto-condensed: 'Roboto Condensed', sans-serif;
+    --IBM-Plex-Sans: 'IBM Plex Sans', sans-serif;
+    
+    /* sizes */
+    --content-width: 1480px; // 1440 + 2x20
+    --content-padding: 20px;
+    // --content-padding-tablet: 52px;
+    --content-padding-tablet: 40px;
+    // --content-padding-mobile: 16px;   
+    --content-padding-mobile: 12px; 
+}

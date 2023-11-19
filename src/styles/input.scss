@@ -1,0 +1,111 @@
+.input {
+    box-sizing: border-box;
+    appearance: none;
+    width: 100%;
+    height: 44px;
+    padding: 8px 60px 8px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--pure-white); 
+    background-color: var(--transparent);
+    border: 1px solid var(--pure-white-stroke);
+    border-radius: 16px;
+    outline: none;
+    
+    @media screen and (min-width: 1200px) {
+        height: 56px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    
+    &:disabled {
+        background-color: transparent;
+    }
+
+    &:focus {
+        color: var(--pure-white-stroke);
+        background-color: var(--transparent);
+    }
+
+    &::placeholder {
+        color: var(--pure-white-stroke);
+    }
+
+    &_success:-webkit-autofill {
+        box-shadow:0 0 0 50px var(--app-background) inset;
+        -webkit-text-fill-color: var(--pure-white);
+        border: 1px solid var(--pure-white-stroke);
+    }
+
+    &_success, &_success:focus {
+        color: var(--pure-white);
+        background-color: var(--app-background);
+        border: 1px solid var(--pure-white-stroke);
+    }
+
+    &_error:invalid:-webkit-autofill {
+        box-shadow:0 0 0 50px var(--app-background) inset;
+        -webkit-text-fill-color: var(--accent-red);
+    }
+
+    &_error:invalid, &_error:focus, &_error:not(:focus) {
+        color: var(--pure-white);
+        background-color: var(--app-background);
+        border: 1px solid var(--accent-red);
+        
+    }
+    &_error::placeholder {
+        color: var(--accent-red);
+    }    
+}
+
+.modalInput {
+    border: 1px solid var(--border-dark-blue);
+    border-radius: 12px;
+    padding: 8px 0 8px 16px;
+    
+    color: var(--text-dark-blue); 
+
+    @media screen and (min-width: 768px) {
+        border-radius: 16px;
+            height: 56px;
+            font-size: 18px;
+            line-height: 40px;
+    }
+
+    &:focus {
+        color: var(--text-dark-blue);
+        background-color: var(--pure-white);
+    }
+
+    &::placeholder {
+        color: var(--pure-white-stroke);
+    }    
+
+    &_success:-webkit-autofill {
+        box-shadow:0 0 0 50px var(--pure-white) inset;
+        -webkit-text-fill-color: var(--text-dark-blue);
+    }
+
+    &_success, &_success:focus {
+        color: var(--text-dark-blue);
+        background-color: var(--pure-white);
+        border: 1px solid var(--border-dark-blue);
+    }
+
+    &_error:invalid:-webkit-autofill {
+        box-shadow:0 0 0 50px var(--pure-white) inset;
+        -webkit-text-fill-color: var(--accent-red);
+    }
+
+    &_error:invalid, &_error:focus, &_error:not(:focus) {
+        color: var(--accent-red);
+        background-color: var(--pure-white);
+        border: 1px solid var(--accent-red);
+    }
+    &_error::placeholder {
+        opacity: 1;
+        color: var(--accent-red);
+    } 
+}
